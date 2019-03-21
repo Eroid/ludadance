@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Dance3</title>
+    <meta charset="UTF-8" />
+</head>
+
+
+<body>
+    <video autoplay id="actualVideo" >     <!--  muted="muted" -->
+        <source src="https://v.redd.it/do9gdjh1b1n21/DASH_720#t=10" type="video/mp4" />
+    </video>
+
+
+    <video id="aud" width="0" height="0" style="float-right:0" loop>
+            <source src="https://v.redd.it/do9gdjh1b1n21/audio#t=10" type="video/mp4">
+            </video>
+
+    <canvas> </canvas>
+
+    <iframe title="YouTube video player" width="480" height="390" src="https://www.youtube.com/embed/nLTq1CaYWBg?autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+
+<!-- JAVASCRIPT -->
+<!-- JAVASCRIPT -->
+<!-- JAVASCRIPT -->
+
+<script>
+    var v = document.querySelectorAll('video');
+    v.forEach(function(e){
+        e.play()
+    });
+
+
+    // var media = document.getElementById("actualVideo");
+    // const playPromise = media.play();
+    // if (playPromise !== null){
+    //     playPromise.catch(() => { media.play(); })
+    // }
+
+    // item = document.getElementById("actualVideo");
+    // var thePromise = item.play();
+
+    // if (thePromise != undefined) {
+    //     thePromise.then(function(_) {
+    //         item.pause();
+    //         item.currentTime = 0;
+    //     });
+    // }
+</script>
+
+</body>
+
+
+
+
+
+</html>
